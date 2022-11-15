@@ -5,13 +5,15 @@ import java.util.ArrayList;
 public class IceCream {
 
 	// Atrributes
+	private int orderNumber = 0;
 	private String name;
 	private int cost;
 	private int numScoops;
 	private ArrayList<String> toppings;
 
 
-	public IceCream(String name, int cost, int numScoops) {
+	public IceCream(int orderNumber, String name, int cost, int numScoops) {
+		this.orderNumber = orderNumber;
 		this.name = name;
 		this.cost = cost;
 		this.numScoops = numScoops;
@@ -38,6 +40,12 @@ public class IceCream {
 	public int getNumScoops() {
 		return numScoops;
 	}
+	
+	public int getOrderNumber() {
+		return orderNumber;
+	}
+	
+	
 
 
 //	public ArrayList<String> getToppings() {
